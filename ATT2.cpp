@@ -11,11 +11,11 @@ void busca(vector <int> &vetor,int n, int x){
     int meio = 0;
     while (li<=lf){
         meio=(li+lf)/2;
-        cout << "Limite Inicio;" << li<< endl;
-        cout << "Limite Final;" << lf << endl;
-        cout << "Meio;" << meio << endl;
-        cout << "-----------------" << endl;
         
+        if(li==lf && vetor[meio]!=x){
+            cout << "Nao encontrado" << endl;
+            break;
+        }
         if(vetor[meio]==x){
             cout << "encontrado no indice;" << meio << endl;
             break;    
